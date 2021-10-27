@@ -1,0 +1,37 @@
+<div [ngClass]="{'dia':dia == true, 'noche':noche == true}">
+  <nav>
+    <div class="navbar">
+      <ul class="items">
+        <li [routerLink]="item.router" *ngFor="let item of menu" >{{item.name}}</li>
+        <i (click)="modo('noche')" *ngIf="tipomodo" class="uil uil-moon"></i>
+        <i (click)="modo('dia')" *ngIf="!tipomodo" class="uil uil-sun"></i>
+      </ul>
+    </div>
+  </nav>
+  <div class="contenedor">
+   <h1> Yilson Mitte</h1>
+   <h2>Web Developer</h2>
+    <div class="boton">
+      <a href="http://" target="_blank" rel="noopener noreferrer">
+        <button class="curri"> <i class="uil uil-file-download-alt"></i>Curriculum</button>
+      </a>
+      <button class="about"> <i class="uil uil-cloud-info"></i>About</button>
+    </div>
+  </div>
+  <div class="menu-lateral">
+    <i class="uil uil-facebook-f"></i>
+    <i class="uil uil-instagram-alt"></i>
+    <i class="uil uil-envelope"></i>
+    <i class="uil uil-whatsapp"></i>
+  </div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+</div>

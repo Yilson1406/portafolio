@@ -1,0 +1,220 @@
+.noche{
+  background-color: #2b2c38;
+  height: 100vh;
+  font-size: 24px;
+  font-family: 'Fredoka One', cursive;
+  position: relative;
+  overflow: hidden;
+}
+.dia{
+  background-color: blanchedalmond;
+  height: 100vh;
+  font-size: 24px;
+  font-family: 'Fredoka One', cursive;
+  position: relative;
+
+}
+.dia .items{
+  display: flex;
+  justify-content: center;
+  color: rgb(41, 40, 40);
+
+}
+nav .navbar{
+  margin-right: 60px;
+}
+.noche .items{
+display: flex;
+justify-content: center;
+color: blanchedalmond;
+}
+.items li{
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+.items i{
+  padding: 20px;
+  cursor: pointer;
+}
+.dia .contenedor{
+  color: rgb(41, 40, 40);
+  position: absolute;
+  top: 40%;
+  right: 50%;
+}
+.noche .contenedor{
+  color: blanchedalmond;
+  position: absolute;
+  top: 40%;
+  right: 50%;
+}
+.menu-lateral{
+  float: right;
+  display: grid;
+  position: absolute;
+  top: 40%;
+  right: 0%;
+}
+.dia .menu-lateral i{
+  font-size:32px;
+  color: #2b2c38;
+}
+.noche .menu-lateral i{
+  font-size:32px;
+  color:blanchedalmond;
+}
+
+h1{
+  letter-spacing: 10px;
+  padding: 10px;
+}
+h2{
+  letter-spacing: 10px;
+  font-size: 24px;
+  padding: 10px;
+}
+.dia .contenedor .boton a button {
+  background-color:brown;
+  padding: 8px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 0;
+  margin: 10px;
+  color:rgb(41, 40, 40);
+  cursor: pointer;
+}
+.noche .contenedor .boton a button{
+  background-color:brown;
+  padding: 8px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+.dia .contenedor .boton button {
+  background-color:brown;
+  padding: 8px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 0;
+  margin: 10px;
+  color:rgb(41, 40, 40);
+  cursor: pointer;
+}
+.noche .contenedor .boton button{
+  background-color:brown;
+  padding: 8px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+/* animacion de cubos */
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #6b6a22;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+          transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  -webkit-animation: cube 12s ease-in forwards infinite;
+          animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #6b6a22;
+}
+.cube:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 0s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 1s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 2s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 2s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 3s;
+  left: 50vw;
+  top: 10vh;
+}
+.cube:nth-child(7) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 3s;
+  left: 80vw;
+  top: 10vh;
+}
+.cube:nth-child(8) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 2s;
+  left: 10vw;
+  top: 30vh;
+}
+.cube:nth-child(9) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 1s;
+  left: 20vw;
+  top: 20vh;
+}
+.cube:nth-child(10) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 0s;
+  left: 30vw;
+  top: 50vh;
+}
+
+@-webkit-keyframes cube {
+  from {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+            transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes cube {
+  from {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+            transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+.boton button i{
+  margin-right: 5px;
+}
