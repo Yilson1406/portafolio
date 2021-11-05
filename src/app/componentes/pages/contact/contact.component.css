@@ -1,0 +1,134 @@
+.contact .contenedor .contactos .form .disableboton{
+  background-color: rgb(41, 40, 40);
+  border: solid blanchedalmond 1px;
+  color: blanchedalmond;
+}
+.contact{
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100%;
+
+}
+.contenedor{
+  width: 100%;
+  display: flex;
+  height: 70vh;
+}
+/* css about */
+.about{
+  background-color: blanchedalmond;
+  width: 50%;
+  position: relative;
+}
+.about h1{
+  text-align: center;
+  margin-top: 30px;
+}
+.about h2{
+  margin: 20px 0 10px 30px;
+}
+.about p{
+  margin: 20px 30px 0 30px;
+}
+.about .con ul li a{
+  text-decoration: none;
+}
+
+.about .skills ul{
+  margin-top: 20px;
+  justify-content:center;
+
+  display: flex;
+  align-items: flex-end;
+}
+.about ul li{
+
+  list-style: none;
+}
+
+
+/* css contact */
+.contactos{
+
+  background-color: rgb(41, 40, 40);
+  width: 50%;
+  position: relative;
+}
+.contactos .titulo h1{
+  text-align: center;
+  margin-top: 30px;
+  color: blanchedalmond;
+}
+.contactos .form form{
+  margin-top: 20px;
+  display: grid;
+}
+.contactos .form form input,textarea{
+  width: auto;
+  margin:10px 40px 10px 40px;
+  border: 0;
+  outline: none;
+  color: blanchedalmond;
+  font-size: 20px;
+  background-color: transparent;
+  border-bottom: solid 2px blanchedalmond;
+}
+.contactos .form form input{
+  height: 40px;
+
+}
+/* textarea{
+  margin-bottom: 50px;
+} */
+.contactos .form form button{
+  position: absolute;
+  bottom: 10%;
+  margin: auto;
+  border-radius: 5px;
+  width: 70%;
+  background-color: blanchedalmond;
+  color: rgb(41, 40, 40);
+  font-size: 20px;
+  border: 0;
+  padding: 10px;
+}
+@media screen and (max-width:700px) {
+  .contact{
+  width: 100%;
+  margin: auto;
+  }
+  .contenedor{
+    display: grid;
+    height: 100vh;
+  }
+  .about{
+
+    width: 100%;
+    height:100vh;
+  }
+  .about .skills ul{
+
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .contactos{
+
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+  }
+  .contactos .form form button{
+    position: relative;
+    top:100%;
+  }
+  .contactos .titulo h1{
+    font-size: 18px;
+  }
+
+
+}

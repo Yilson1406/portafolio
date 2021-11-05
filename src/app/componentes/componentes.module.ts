@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -13,11 +15,14 @@ import { ContactComponent } from './pages/contact/contact.component';
     HomeComponent,
     ProjectComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
-    ComponentesRoutingModule
+    ComponentesRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class ComponentesModule { }

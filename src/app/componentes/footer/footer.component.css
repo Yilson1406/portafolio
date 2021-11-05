@@ -1,0 +1,26 @@
+.footer{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+
+}
+.footer a{
+  color: gray;
+}
+.redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.redes ul i{
+  padding: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.copyri{
+  padding: 10px;
+  text-align: center;
+}

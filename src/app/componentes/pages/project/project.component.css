@@ -1,3 +1,81 @@
+
 .projects{
+  background-color:#f7f7f7;
   animation-duration: 2s;
+  border: 0;
+}
+.titulo{
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+.cards{
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  position: relative;
+  margin: 20px;
+  width: 30%;
+}
+.card img{
+  height:250px;
+  width: 100%;
+}
+.card a button{
+  display: none;
+  height: 50px;
+  width: 50%;
+  border-radius: 5px;
+  border:0px;
+  color:blanchedalmond;
+  background-color: rgb(41, 40, 40);
+  font-size: 30px;
+  padding: 5px 20px 5px 20px;
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.card a button i{
+  margin: 0 5px 0 5px;
+}
+.card h2{
+  text-align: center;
+  display: none;
+  width: 90%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card:hover img{
+ transition:all .3s ease-in-out;
+  /* opacity: 0.4;  */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+.card:hover a button{
+  display:inline ;
+}
+.card:hover h2{
+  display: inline;
+}
+@media screen and (max-width:700px) {
+.cards{
+  display: grid;
+  flex-wrap: nowrap;
+}
+.card{
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+.card a button{
+  font-size: 24px;
+}
+
 }

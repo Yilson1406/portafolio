@@ -1,3 +1,15 @@
-<div class="projects animate__pulse app">
-  <h1>Projects Works</h1>
+<div class="projects animate__fadeIn">
+  <div class="titulo">
+    <h1>Projects Works</h1>
+  </div>
+  <div class="cards">
+    <div class="card" *ngFor="let project of projects" >
+      <img [src]="project.foto" alt="">
+      <h2>{{project.titulo}}</h2>
+      <a [href]="project.ruta" target="_blank">
+        <button><i class="uil uil-eye"></i>View <i class="uil uil-step-forward"></i></button>
+      </a>
+
+    </div>
+  </div>
 </div>

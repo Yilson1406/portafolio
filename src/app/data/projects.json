@@ -1,0 +1,34 @@
+{
+    "projects":[
+      {
+        "titulo":"Fundacion Rocio",
+        "descripcion":"Este portafolio esta realizado con php, html, css, ajax, y MySql",
+        "ruta":"https://fundacionrocio.com",
+        "foto":"../../../../assets/projects/Captura de pantalla (211).png"
+      },
+      {
+        "titulo":"Portafolio Web Estudiantil2",
+        "descripcion":"Este portafolio esta realizado con php, html, css, ajax, y MySql",
+        "ruta":"https://animate.style",
+        "foto":"https://www.gizlogic.com/wp-content/uploads/2020/03/Crear-una-pagina-web.jpg"
+      },
+      {
+        "titulo":"Portafolio Web Estudiantil 3",
+        "descripcion":"Este portafolio esta realizado con php, html, css, ajax, y MySql",
+        "ruta":"https://animate.style",
+        "foto":"https://www.gizlogic.com/wp-content/uploads/2020/03/Crear-una-pagina-web.jpg"
+      },
+      {
+        "titulo":"Portafolio Web Estudiantil 4",
+        "descripcion":"Este portafolio esta realizado con php, html, css, ajax, y MySql",
+        "ruta":"https://animate.style",
+        "foto":"https://www.gizlogic.com/wp-content/uploads/2020/03/Crear-una-pagina-web.jpg"
+      },
+      {
+        "titulo":"Portafolio Web Estudiantil 4",
+        "descripcion":"Este portafolio esta realizado con php, html, css, ajax, y MySql",
+        "ruta":"https://animate.style",
+        "foto":"https://www.gizlogic.com/wp-content/uploads/2020/03/Crear-una-pagina-web.jpg"
+      }
+    ]
+  }

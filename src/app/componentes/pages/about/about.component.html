@@ -1,4 +1,4 @@
-<div [ngClass]="{'dia':dia == true, 'noche':noche == true}">
+<div class='about' [ngClass]="{'dia':dia == true, 'noche':noche == true}">
   <nav>
     <div class="navbar">
       <ul class="items">
@@ -12,17 +12,24 @@
    <h1> Yilson Mitte</h1>
    <h2>Web Developer</h2>
     <div class="boton">
-      <a href="http://" target="_blank" rel="noopener noreferrer">
+      <a href="https://drive.google.com/file/d/1Gia_LArurKkROBDBlU2TiX8OjR2pspg0/view?usp=sharing" target="_blank" rel="noopener noreferrer">
         <button class="curri"> <i class="uil uil-file-download-alt"></i>Curriculum</button>
       </a>
-      <button class="about"> <i class="uil uil-cloud-info"></i>About</button>
+      <button [routerLink]="[ '/contact']" class="about"> <i class="uil uil-cloud-info"></i>About</button>
     </div>
   </div>
+  <div class="editor">
+
+    <p class="php"><span>echo</span>  "Hola Mundo!!";<span class="espacio">&#160;</span></p>
+    <p class="js"><span> console.log</span>("Hola Mundo!!");<span class="espacio">&#160;</span></p>
+    <p class="java"><span> System.out.println</span>("Hola Mundo!!");<span class="espacio">&#160;</span></p>
+    <p class="c"><span> prinft</span>("Hola Mundo!!");<span class="espacio">&#160;</span></p>
+    <p class="c2"><span> Console.WriteLine</span>("Hola Mundo!!");<span class="espacio">&#160;</span></p>
+  </div>
   <div class="menu-lateral">
-    <i class="uil uil-facebook-f"></i>
-    <i class="uil uil-instagram-alt"></i>
-    <i class="uil uil-envelope"></i>
-    <i class="uil uil-whatsapp"></i>
+
+    <a href="mailto:yilson.mitte@gmail.com"><i class="uil uil-envelope"></i></a>
+    <a href="tel:+593995831948"><i class="uil uil-whatsapp"></i></a>
   </div>
   <div class="cube"></div>
   <div class="cube"></div>

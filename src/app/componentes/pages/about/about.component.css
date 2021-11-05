@@ -12,7 +12,7 @@
   font-size: 24px;
   font-family: 'Fredoka One', cursive;
   position: relative;
-
+  overflow: hidden;
 }
 .dia .items{
   display: flex;
@@ -23,6 +23,65 @@
 nav .navbar{
   margin-right: 60px;
 }
+
+.editor{
+  border: solid #6b6a22 5px;
+  border-radius: 5px;
+  position:absolute;
+  top:60%;
+  left: 45%;
+  display: table;
+  width: 50%;
+  background-color:rgb(41, 40, 40);
+  color: blanchedalmond;
+
+}
+.editor p{
+  position: relative;
+	float: left;
+  color:grey
+}
+.dia .editor p .espacio {
+  position:absolute;
+  right:0;
+  width:0;
+  background: rgb(41, 40, 40);
+  border-left: 1px solid blanchedalmond;
+  animation: escribir 5s steps(30) infinite alternate;
+}
+.noche .editor p .espacio {
+  position:absolute;
+  right:0;
+  width:0;
+  background: blanchedalmond;
+  border-left: 1px solid rgb(41, 40, 40);
+  animation: escribir 5s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+  from { width: 100% }
+  to { width:0 }
+}
+.editor .php span{
+  color: blue;
+}
+.editor .js span{
+  color:tomato;
+}.editor .java span{
+  color: green;
+}.editor .c span{
+  color: rebeccapurple;
+}.editor .c2 span{
+  color: red;
+}
+.editor p, span{
+  margin-left: 20px;
+  font-family: 'IBM Plex Mono', monospace !important;
+}
+.noche .editor{
+  background-color: blanchedalmond;
+}
+
 .noche .items{
 display: flex;
 justify-content: center;
@@ -40,13 +99,13 @@ color: blanchedalmond;
 .dia .contenedor{
   color: rgb(41, 40, 40);
   position: absolute;
-  top: 40%;
+  top: 20%;
   right: 50%;
 }
 .noche .contenedor{
   color: blanchedalmond;
   position: absolute;
-  top: 40%;
+  top: 20%;
   right: 50%;
 }
 .menu-lateral{
@@ -57,62 +116,55 @@ color: blanchedalmond;
   right: 0%;
 }
 .dia .menu-lateral i{
-  font-size:32px;
+  font-size:42px;
   color: #2b2c38;
 }
 .noche .menu-lateral i{
-  font-size:32px;
+  font-size:42px;
   color:blanchedalmond;
 }
 
 h1{
   letter-spacing: 10px;
   padding: 10px;
+  font-size: 70px;
 }
 h2{
   letter-spacing: 10px;
-  font-size: 24px;
+  font-size: 30px;
   padding: 10px;
 }
 .dia .contenedor .boton a button {
-  background-color:brown;
-  padding: 8px;
+  background-color:transparent;
+  padding: 10px;
   font-family: 'Fredoka One', cursive;
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 5px;
-  border: 0;
+  border: solid rgb(41, 40, 40) 2px ;
   margin: 10px;
   color:rgb(41, 40, 40);
   cursor: pointer;
 }
-.noche .contenedor .boton a button{
-  background-color:brown;
-  padding: 8px;
-  font-family: 'Fredoka One', cursive;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 0;
-  margin: 10px;
-  cursor: pointer;
-}
+
 .dia .contenedor .boton button {
-  background-color:brown;
-  padding: 8px;
+  background-color:transparent;
+  padding: 10px;
   font-family: 'Fredoka One', cursive;
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 5px;
-  border: 0;
+  border: solid rgb(41, 40, 40) 2px;
   margin: 10px;
   color:rgb(41, 40, 40);
   cursor: pointer;
 }
 .noche .contenedor .boton button{
-  background-color:brown;
-  padding: 8px;
+  background-color:transparent;
+  padding: 10px;
   font-family: 'Fredoka One', cursive;
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 5px;
-  border: 0;
+  border: solid blanchedalmond 2px;
+  color: blanchedalmond;
   margin: 10px;
   cursor: pointer;
 }
@@ -149,8 +201,8 @@ h2{
 .cube:nth-child(4) {
   -webkit-animation-delay: 6s;
           animation-delay: 2s;
-  left: 90vw;
-  top: 10vh;
+  left: 70vw;
+  top: 50vh;
 }
 .cube:nth-child(5) {
   -webkit-animation-delay: 8s;
@@ -217,4 +269,83 @@ h2{
 
 .boton button i{
   margin-right: 5px;
+
+}
+
+@media screen and (max-width: 700px) {
+    .dia, .noche{
+      font-size: 20px;
+      height: 100vh;
+    }
+    .items{
+      margin-left: 30px;
+    }
+    .items i{
+      padding: 10px;
+      font-size: 30px;
+    }
+    h1{
+      font-size: 40px;
+    }
+    h2{
+      font-size: 12px;
+    }
+
+    .cube:nth-child(4) {
+      display: none;
+    }
+    .cube:nth-child(6) {
+     display: none;
+    }
+
+    .cube:nth-child(7) {
+      display: none;
+    }
+    .cube:nth-child(8) {
+      -webkit-animation-delay: 10s;
+              animation-delay: 1s;
+      left: 10vw;
+      top: 30vh;
+    }
+    .cube:nth-child(9) {
+      -webkit-animation-delay: 10s;
+              animation-delay: 0s;
+      left: 60vw;
+      top: 20vh;
+    }
+    .cube:nth-child(10) {
+      -webkit-animation-delay: 10s;
+              animation-delay: 0s;
+      left: 70vw;
+      top: 50vh;
+    }
+    .items li{
+      padding: 20px 10px 20px 10px;
+    }
+    .dia .contenedor{
+      top: 20%;
+      right: 30%
+    }
+    .noche .contenedor{
+      top: 20%;
+      right: 30%
+    }
+    .menu-lateral{
+      top: 30%;
+    }
+    .contenedor .boton{
+      display: flex;
+    }
+    .editor{
+      margin: 30px 0px 0px 0px;
+      top:60%;
+      left: auto;
+      width: 97%;
+    }
+    .editor p{
+      padding: 2px;
+      margin-left: 3px;
+      font-size: 14px;
+    }
+
 }

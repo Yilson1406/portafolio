@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -10,9 +10,12 @@ export class AboutComponent implements OnInit {
   dia:boolean=true
   noche:boolean=false
   menu:Array<any>=[]
+
+
   constructor() { }
 
   ngOnInit(): void {
+
     this.menu = [
       {
         name:'Home',
@@ -24,7 +27,7 @@ export class AboutComponent implements OnInit {
       },
       {
         name:'Contacts',
-        router:'/contacts'
+        router:'/contact'
       }
     ]
   }
@@ -33,13 +36,15 @@ export class AboutComponent implements OnInit {
       this.noche=true
       this.dia=false
       this.tipomodo = true
-      console.log('dia----->',this.dia,'noche----->',this.noche);
+      // console.log('dia----->',this.dia,'noche----->',this.noche);
+
     }
     if(modo === 'noche'){
       this.tipomodo = false
       this.noche=false
       this.dia=true
-      console.log('dia----->',this.dia,'noche----->',this.noche);
+
+      // console.log('dia----->',this.dia,'noche----->',this.noche);
     }
 
   }

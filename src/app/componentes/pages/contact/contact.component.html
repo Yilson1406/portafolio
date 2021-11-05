@@ -1,1 +1,40 @@
-<p>contact works!</p>
+<div class="contact">
+  <div class="contenedor">
+    <div class="about">
+      <h1>ABOUT ME</h1>
+    <p>My name is Yilson Mitte, I am an independent web developer from Ecuador,
+      25 years old. I am a guy who likes technology. I like solving problems of social and technological interest,
+       creating technologies that facilitate people's performance, developing experiences and enriching web applications. When I'm not working with technology,
+       I like to play sports, I like soccer and cycling, I also like to travel and see great places.</p>
+      <div class="con">
+        <h2>Contact</h2>
+        <ul>
+          <li><i class="uil uil-fast-mail"></i> Email: <a href="mailto:yilson.mitte@gmail.com">yilson.mitte@gmail.com</a></li>
+          <li><i class="uil uil-mobile-vibrate"></i> +593 995831948</li>
+          <li> <i class="uil uil-location-point"></i> Esmeraldas - Ecuador</li>
+        </ul>
+      </div>
+      <div class="skills">
+          <h1>Skills</h1>
+        <ul>
+          <li *ngFor="let item of arrayskills" ><img [src]="item.src" [title]='item.title'/></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contactos">
+      <div class="titulo">
+        <h1>LEAVE ME A MESSAGE</h1>
+      </div>
+      <div class="form">
+        <form [formGroup]="form" (ngSubmit)='send()' >
+          <input type="text" placeholder="Name" formControlName='nombres' >
+          <input type="text" placeholder="Email" formControlName='email' >
+          <input type="text" placeholder="Phone" formControlName='telefono'>
+          <textarea name="" id="" cols="20" rows="3" formControlName='mensaje'>
+          </textarea>
+          <button type="submit" [disabled]='!form.valid' [ngClass]="{'disableboton': form.invalid}" > Enviar</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
